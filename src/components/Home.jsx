@@ -8,7 +8,7 @@ function Home() {
   return (
     <motion.div
     initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }} className='pt-[50px] w-full flex flex-col justify-center items-center absolute h-dvh top-0 '>
+    whileInView={{ opacity: 1 }}  className="pt-[50px] w-full flex flex-col justify-center items-center absolute h-dvh top-0 left-0 right-0 overflow-x-hidden">
       <div className='flex flex-col-reverse gap-x-30 relative m-auto md:flex-row justify-center items-center'>
         <div className='text-white mt-10 md:w-500px flex flex-col justify-center max-w-[580px] m-auto  p-4'>
           <h1 className='text-5xl font-semibold tracking-wide'>Divya Inapakurthi</h1>
@@ -21,8 +21,8 @@ function Home() {
       </div>
         </div>
         <div className='relative'>
-          <div class="my-10 absolute"><div class="w-36 z-40 h-36 rounded-full bg-gradient-to-r blur-3xl animate-pulse-slow sm:w-30 sm:h-30 from-purple-500 to-blue-500 "></div></div>
-          <img src={ani} className='w-[200px] z-50 md:w-[340px]' alt="not found" />
+          <div class="my-10 absolute"><div class="w-36 h-36 rounded-full bg-gradient-to-r blur-3xl animate-pulse-slow sm:w-30 sm:h-30 from-purple-500 to-blue-500 "></div></div>
+          <img src={ani} className="w-[200px] z-50 md:w-[340px] max-w-full"  alt="not found" />
           <BouncingSVG />
         </div>
       </div>
