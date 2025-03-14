@@ -3,7 +3,7 @@ import React from "react";
 export const BouncingSVG = () => {
   return (
     <div className="mt-10 -ml-5">
-      <div className="">
+      <div className="animate-bounce">
         
         <svg xmlns="http://www.w3.org/2000/svg" width="302" height="37" viewBox="0 0 402 37" fill="none">
           <rect x="0.5" y="0.88269" width="401" height="35.6173" fill="#282C33" />

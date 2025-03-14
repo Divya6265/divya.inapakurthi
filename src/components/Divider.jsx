@@ -2,7 +2,7 @@ import React from "react";
 
 const HorizontalRule = () => {
   return (
-    <div className="horizontal-rule flex items-center mx-auto" style={{ maxWidth: "512px" }}>
+    <div className="horizontal-rule flex items-center py-5 mx-auto" style={{ maxWidth: "512px" }}>
       <div className="flex-1 -mr-0.5 h-0.5 bg-gradient-to-l from-gray-300 dark:from-gray-600 to-transparent"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
