@@ -2,11 +2,12 @@ import React from 'react'
 import ani from '/Group 36.svg'
 import { motion } from "framer-motion"
 import { FaAngleRight } from "react-icons/fa6";
-import { BouncingSVG, Arrow, Line, Line1, Line2,ArrowDown } from './BouncingSVG'
+import { BouncingSVG, Arrow, Line, Line1, Line2} from './BouncingSVG'
 function Home() {
 
   return (
-    <motion.div
+   <section id="home">
+     <motion.div
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}  className="pt-[50px] w-full flex flex-col justify-center items-center absolute h-dvh top-0 left-0 right-0 overflow-x-hidden">
       <div className='flex flex-col-reverse gap-x-30 relative m-auto md:flex-row justify-center items-center'>
@@ -15,7 +16,9 @@ function Home() {
           <h3 className='text-gray-500  text-3xl font-[300] pt-1'>Software Developer</h3>
           <span className='tracking-wide  font-[300] text-[rgb(229,231,235)] pt-7 '>I am a passionate software developer with a strong background in <p className='relative inline-block'>full-stack development, <Arrow /> </p>  dedicated to building <span className='relative'>responsive, <Line /> </span> <span className='relative'> scalable, <Line1 /> </span>  and <span className='relative'> user-centric <Line2 /> </span> solutions that bridge technology and user needs.</span>
           <div className='flex mt-5 '>
-        <button className=' text-white tracking-wider bg-[#C778DD] mt-5 rounded px-8 py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 z-60'>Contact Me</button>
+        <button className=' text-white tracking-wider bg-[#C778DD] mt-5 rounded px-8 py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 z-60'>
+          <a href="#contact">Contact Me</a>
+        </button>
         <button className=' text-white tracking-wider z-60  mt-5 rounded px-8 py-2 font-semibold hover:cursor-pointer flex items-center gap-2'>Resume <FaAngleRight fill='#fff' size={20} />
          </button>
       </div>
@@ -31,6 +34,7 @@ function Home() {
         <ArrowDown/>
       </div> */}
     </motion.div>
+   </section>
   )
 }
 

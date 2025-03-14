@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "/name.png";
 import { FiGithub, FiLinkedin, FiInstagram, FiCodepen } from "react-icons/fi"; // Import icons
 
@@ -14,10 +14,41 @@ const Header = () => {
     setActiveLink(link);
   };
 
+  // Intersection Observer to detect active section
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
-    <nav className={`bg-neutral-900/50 backdrop-blur-md  z-50 sticky p-4 md:max-w-[1000px] w-full ${
-      isOpen ? 'h-full':'' }  md:h-fit m-auto`}>
-      <div className="container  mx-auto flex justify-between items-center">
+    <nav
+      className={`bg-neutral-900/50 backdrop-blur-md z-50 fixed p-4 w-full ${
+        isOpen ? "h-full" : ""
+      } md:h-fit m-auto`}
+    >
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-lg font-bold w-19">
           <img src={logo} alt="not found" />
@@ -64,49 +95,47 @@ const Header = () => {
               )}
             </a>
           ))}
-
         </div>
-        
-          {/* Social Icons (Desktop) */}
-          <div className="hidden md:flex  space-x-7">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#9ca3af]"
-            >
-              <FiGithub size={18} />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#9ca3af]"
-            >
-              <FiLinkedin size={18} />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#9ca3af]"
-            >
-              <FiInstagram size={18} />
-            </a>
-            <a
-              href="https://codepen.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#9ca3af]"
-            >
-              <FiCodepen size={20} />
-            </a>
-          </div>
+
+        {/* Social Icons (Desktop) */}
+        <div className="hidden md:flex space-x-7">
+          <a
+            href="https://github.com/Divya6265"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#9ca3af]"
+          >
+            <FiGithub size={18} />
+          </a>
+          <a
+            href="https://linkedin.com/in/divya-inapakurthi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#9ca3af]"
+          >
+            <FiLinkedin size={18} />
+          </a>
+          <a
+            href="https://instagram.com/divya.music_lvr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#9ca3af]"
+          >
+            <FiInstagram size={18} />
+          </a>
+          <a
+            href="https://codepen.io/divya-inapakurthi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#9ca3af]"
+          >
+            <FiCodepen size={20} />
+          </a>
+        </div>
       </div>
 
-      {/* Mobile Menu (Dropdown) */}
       <div
-        className={`md:hidden transition-all duration-500  ease-in-out overflow-hidden ${
+        className={`md:hidden transition-all duration-500 ease-in-out overflow-hidden ${
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -134,7 +163,7 @@ const Header = () => {
           {/* Social Icons (Mobile) */}
           <div className="flex justify-center space-x-6 mt-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Divya6265"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#9ca3af]"
@@ -142,7 +171,7 @@ const Header = () => {
               <FiGithub size={18} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/divya-inapakurthi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#9ca3af]"
@@ -150,7 +179,7 @@ const Header = () => {
               <FiLinkedin size={18} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/divya.music_lvr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#9ca3af]"
@@ -158,7 +187,7 @@ const Header = () => {
               <FiInstagram size={18} />
             </a>
             <a
-              href="https://codepen.io"
+              href="https://codepen.io/divya-inapakurthi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#9ca3af]"

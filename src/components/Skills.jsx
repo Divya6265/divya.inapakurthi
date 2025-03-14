@@ -1,30 +1,48 @@
 import React from 'react'
+import {SkillSection} from './SkillSection';
+import ani from '/Group 53.svg';
+import ani1 from '/Frame 37.svg';
 
-function Skills() {
+const languages = [
+    { logo: "https://vectorwiki.com/images/G9sE3__javascript.svg", alt: "Javascript logo", name: "Javascript" },
+    { logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg", alt: "CSS logo", name: "CSS" },
+    { logo: "https://cdn.worldvectorlogo.com/logos/html-1.svg", alt: "HTML logo", name: "HTML" },
+  ];
+  
+  const frontend = [
+    { logo: "https://brandeps.com/logo-download/R/Redux-logo-vector-01.svg", alt: "Redux logo", name: "Redux" },
+    { logo: "https://vectorwiki.com/images/iC6dm__tailwindcss.svg", alt: "Tailwind CSS logo", name: "Tailwind CSS" },
+    { logo: "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_reactjs.svg", alt: "React JS logo", name: "React JS" },
+  ];
+  
+  const backend = [
+    { logo: "https://raw.githubusercontent.com/bestofjs/bestofjs/master/apps/bestofjs-nextjs/public/logos/nodejs.svg", alt: "Node JS logo", name: "Node JS" },
+    { logo: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg", alt: "Express JS logo", name: "Express JS" },
+    { logo: "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/mysql-icon.svg", alt: "MySQL logo", name: "MySQL" },
+    { logo: "https://raw.githubusercontent.com/NX211/homer-icons/master/svg/mongodb.svg", alt: "MongoDB logo", name: "MongoDB" },
+  ];
+  
+  const tools = [
+    { logo: "https://brandeps.com/logo-download/G/GitHub-Icon-logo-vector-01.svg", alt: "Github logo", name: "Github" },
+    { logo: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg", alt: "Git logo", name: "Git" },
+    { logo: "https://vectorwiki.com/images/H4D8X__figma.svg", alt: "Figma logo", name: "Figma" },
+  ];
+
+  const Skills = () => {
     return (
-        <div id="skills" className='flex flex-col justify-center items-center  bg-neutral-900 text-white font-inter'>
-            <h1 className='text-3xl font-semibold '>Skills</h1>
-            <h5 className='text-xl text-gray-400/50'>What I know and have worked with</h5>
-
-
-            <div className="relative max-w-[95vw] md:max-w-5xl overflow-clip p-2"><div className="absolute left-0 inset-y-0 w-8 md:w-16 bg-gradient-to-r from-white dark:from-neutral-900 to-transparent z-10"></div><div className="absolute right-0 inset-y-0 w-8 md:w-16 bg-gradient-to-l from-white dark:from-neutral-900 to-transparent z-10"></div><div className="flex justify-center mb-4"><h2 className="text-xl font-bold ">Languages</h2></div><div className="skills flex gap-2 md:gap-4" style="translate: none; rotate: none; scale: none; transform: translate3d(-36.1453%, 0px, 0px);"><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/IcHfP__typescript.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Typescript logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Typescript</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/G9sE3__javascript.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Javascript logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Javascript</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Python logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Python</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/F37jJ__golang.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Golang logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Golang</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/bash-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Bash logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Bash</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="CSS logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">CSS</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" className="mx-auto size-8 md:size-12 mb-2" alt="HTML logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">HTML</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/IcHfP__typescript.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Typescript logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Typescript</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/G9sE3__javascript.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Javascript logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Javascript</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Python logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Python</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://vectorwiki.com/images/F37jJ__golang.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Golang logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Golang</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/bash-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="Bash logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">Bash</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" className="mx-auto size-8 md:size-12 mb-2" alt="CSS logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">CSS</figcaption></figure></div><div className="text-center p-2 md:p-3 min-h-16 min-w-24 md:min-h-24 md:min-w-32 rounded-xl dark:bg-neutral-800/20 shadow dark:shadow-gray-600/20"><figure className="text-center text-base"><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" className="mx-auto size-8 md:size-12 mb-2" alt="HTML logo"/><figcaption className="text-xs text-gray-600 dark:text-gray-200 md:text-base">HTML</figcaption></figure></div></div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-    )
-}
-
-export default Skills
+<section id='skills' className='relative'> 
+<div className="  pt-20 space-y-6 bg-neutral-900 text-center text-white">
+  <img src={ani1} alt="not found" className='absolute w-10 z-40 md:w-30 top-40 left-0' />
+        <h1 className='text-3xl font-semibold m-0 p-0 '> Skills</h1>
+        <h1 className='text-xl text-gray-400/50 mt-0 z-100'>What I know and have worked with</h1>
+        <SkillSection title="Languages" skills={languages} />
+        <SkillSection title="Front-end" skills={frontend} />
+        <SkillSection title="Back-end" skills={backend} />
+        <SkillSection title="Tools & Utilities" skills={tools} />
+      </div>
+  <img src={ani} alt="not found"  className='absolute w-30 z-40 md:w-60 bottom-0 right-0'/>
+</section>
+    );
+  };
+  
+  export default Skills;
