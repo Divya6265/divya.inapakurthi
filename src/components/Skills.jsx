@@ -2,6 +2,7 @@ import React from 'react'
 import {SkillSection} from './SkillSection';
 import ani from '/Group 53.svg';
 import ani1 from '/Frame 37.svg';
+import ani2 from '/quote.svg'
 
 const languages = [
     { logo: "https://vectorwiki.com/images/G9sE3__javascript.svg", alt: "Javascript logo", name: "Javascript" },
@@ -30,6 +31,13 @@ const languages = [
 
   const Skills = () => {
     return (
+ <>
+ 
+ <div className='flex pt-10 justify-center w-full items-center'>
+        <img src={ani2} alt="" className='w-100' />
+      </div>
+
+
 <section id='skills' className='relative'> 
 <div className="  pt-20 space-y-6 bg-neutral-900 text-center text-white">
   <img src={ani1} alt="not found" className='absolute w-10 z-40 md:w-30 top-40 left-0' />
@@ -42,6 +50,7 @@ const languages = [
       </div>
   <img src={ani} alt="not found"  className='absolute w-30 z-40 md:w-60 bottom-0 right-0'/>
 </section>
+ </>     
     );
   };
   
