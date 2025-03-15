@@ -57,7 +57,7 @@ function Projects() {
             />
             <div className="hidden md:flex absolute inset-0 w-full h-full justify-center items-center bg-neutral-900/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/fashion-ecommerce-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -65,7 +65,7 @@ function Projects() {
                 <FaGithub size={30} className="text-white" />
               </a>
               <a
-                href="https://your-live-demo.com"
+                href="https://fashion-ecommerce-frontend.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -82,7 +82,7 @@ function Projects() {
                 transition={{ duration: 0.3 }}
                 className="flex items-center w-75 text-[#C778DD] hover:text-blue-500 font-bold text-2xl gap-2 transform transition duration-500 hover:cursor-pointer"
               >
-                <a href="">Fashion E-commerce Store</a>
+                <a href="https://fashion-ecommerce-frontend.vercel.app/">Fashion E-commerce Store</a>
               </motion.h1>
               <span className="w-2 ml-1">
                 <CiShare1 className="md:hidden mt-1 group-hover:text-blue-500 text-[#C778DD] md:group-hover:block" />
@@ -108,7 +108,7 @@ function Projects() {
                 </motion.span>
               ))}
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/fashion-ecommerce-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="md:hidden p-2.5 bg-neutral-700/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -136,7 +136,7 @@ function Projects() {
             />
             <div className="hidden md:flex absolute inset-0 w-full h-full justify-center items-center bg-neutral-900/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/scoreboard_frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -144,7 +144,7 @@ function Projects() {
                 <FaGithub size={24} className="text-white" />
               </a>
               <a
-                href="https://your-live-demo.com"
+                href="https://scoreboard-frontend-delta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -169,7 +169,7 @@ function Projects() {
                 transition={{ duration: 0.3 }}
                 className="flex items-center w-70 text-[#C778DD] hover:text-blue-500 font-bold text-2xl gap-2 transform transition duration-500 hover:cursor-pointer"
               >
-                <a href="">Leader Board using SSE</a>
+                <a href="https://scoreboard-frontend-delta.vercel.app/">Leader Board using SSE</a>
               </motion.h1>
               <span className="w-2 ml-1">
                 <CiShare1 className="md:hidden mt-1 group-hover:text-blue-500 text-[#C778DD] md:group-hover:block" />
@@ -195,7 +195,7 @@ function Projects() {
                 </motion.span>
               ))}
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/scoreboard_frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="md:hidden ml-20 p-2.5 bg-neutral-700/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -223,7 +223,7 @@ function Projects() {
             />
             <div className="hidden md:flex absolute inset-0 w-full h-full justify-center items-center bg-neutral-900/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/Tic-Tac-Toe-web-socket-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -231,7 +231,7 @@ function Projects() {
                 <FaGithub size={24} className="text-white" />
               </a>
               <a
-                href="https://your-live-demo.com"
+                href="https://tic-tac-toe-web-socket-frontend.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-6 p-4 bg-neutral-900/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
@@ -248,7 +248,7 @@ function Projects() {
                 transition={{ duration: 0.3 }}
                 className="title flex items-center w-85 text-[#C778DD] hover:text-blue-500 font-bold text-2xl gap-2 transform transition duration-500 hover:cursor-pointer"
               >
-                <a href="">Tic Tac Toe using WebSockets</a>
+                <a href="https://tic-tac-toe-web-socket-frontend.vercel.app/">Tic Tac Toe using WebSockets</a>
               </motion.h1>
               <span className="w-2 ml-1">
                 <CiShare1 className="md:hidden mt-1 title:hover:text-blue-500 group-hover:text-[#C778DD] text-[#C778DD] md:group-hover:block" />
@@ -274,7 +274,7 @@ function Projects() {
                 </motion.span>
               ))}
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/Divya6265/Tic-Tac-Toe-web-socket-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="md:hidden ml-20 p-2.5 bg-neutral-700/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
