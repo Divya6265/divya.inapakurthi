@@ -6,14 +6,15 @@ import { BouncingSVG, Arrow, Line, Line1, Line2 } from './BouncingSVG';
 
 function Home() {
   return (
-    <section id="home" className="w-full px-2 md:px-0">
+    <section id="home" className="w-full h-[100vh] px-2 md:px-0">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="pt-[50px] w-full flex flex-col justify-center items-center absolute h-full top-0 left-0 right-0 overflow-x-hidden">
+        className="pt-[50px] w-full h-[100vh] flex flex-col justify-center items-center absolute 
+        full top-0 left-0 right-0 overflow-x-hidden">
         <div className="flex flex-col-reverse gap-x-30 relative m-auto md:flex-row justify-center items-center">
-          <div className="text-white mt-10 md:w-500px flex flex-col justify-center max-w-[580px] m-auto p-4">
+          <div className="text-white mt-0 md:mt-10 md:w-500px flex flex-col justify-center max-w-[580px] m-auto p-4">
             <motion.h1
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -34,7 +35,7 @@ function Home() {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="tracking-wide font-[300] text-[rgb(229,231,235)] pt-7"
+              className="tracking-wide font-[300] text-[rgb(229,231,235)] pt-2 md:pt-7 "
             >
               I am a passionate software developer with a strong background in{' '}
               <p className="relative inline-block">
@@ -61,7 +62,7 @@ function Home() {
                 transition={{ delay: 0.8, duration: 0.5 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-white tracking-wider bg-[#C778DD] mt-5 rounded px-8 py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 z-60"
+                className="text-white tracking-wider bg-[#C778DD] md:mt-5 rounded px-3 md:px-8 py-2 md:py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 "
               >
                 <a href="#contact">Contact Me</a>
               </motion.button>
@@ -74,7 +75,7 @@ function Home() {
                 whileTap={{ scale: 0.95 }}
                 href="/Divya Inapakurthi Resume.pdf"
                 download="DivyaInapakurthi.pdf"
-                className="text-white tracking-wider z-60 mt-5 rounded px-8 py-2 font-semibold hover:cursor-pointer flex items-center gap-2 ml-4"
+                className="text-white tracking-wider  md:mt-5 rounded px-3 md:px-8  md:py-0 font-semibold hover:cursor-pointer flex items-center gap-2 ml-4"
               >
                 Resume
                 <FaAngleRight fill="#fff" size={20} />
