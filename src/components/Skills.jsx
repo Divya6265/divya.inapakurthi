@@ -40,7 +40,7 @@ const Skills = () => {
           transition={{ duration: 0.8 }}
           src={ani2}
           alt=""
-          className="w-70 md:w-130"
+          className="w-80 md:w-130"
         />
       </div>
 
