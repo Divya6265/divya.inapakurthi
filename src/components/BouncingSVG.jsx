@@ -2,7 +2,7 @@ import React from "react";
 
 export const BouncingSVG = () => {
   return (
-    <div className="mt-10 -ml-5">
+    <div className="mt-5 md:mt-10 -ml-5">
       <div className="">
         
         <svg xmlns="http://www.w3.org/2000/svg" width="302" height="37" viewBox="0 0 402 37" fill="none">

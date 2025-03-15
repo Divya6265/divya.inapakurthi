@@ -89,7 +89,7 @@ function Home() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="relative"
           >
-            <div className="my-10 absolute">
+            <div className="mt-20 md:my-10 absolute">
               <div className="w-36 h-36 rounded-full bg-gradient-to-r blur-3xl animate-pulse-slow sm:w-30 sm:h-30 from-purple-500 to-blue-500"></div>
             </div>
             <motion.img
@@ -97,7 +97,7 @@ function Home() {
               animate={{ scale: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
               src={ani}
-              className="w-[200px] z-50 md:w-[340px] max-w-full"
+              className="w-[200px] z-50 md:w-[340px] pt-20 md:pt-0 max-w-full"
               alt="not found"
             />
             <BouncingSVG />
