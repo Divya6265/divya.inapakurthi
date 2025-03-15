@@ -56,16 +56,17 @@ function Home() {
             </motion.span>
             <div className="flex mt-5">
               {/* Contact Me Button */}
-              <motion.button
+              <motion.a
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-white tracking-wider bg-[#C778DD] md:mt-5 rounded px-3 md:px-8 py-2 md:py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 "
+                href="#contact"
+                className="text-white tracking-wider z-40 bg-[#C778DD] md:mt-5 rounded px-3 md:px-8 py-2 md:py-2 font-semibold hover:cursor-pointer hover:bg-[#8d569c] transform transition duration-500 "
               >
-                <a href="#contact">Contact Me</a>
-              </motion.button>
+                Contact Me
+              </motion.a>
               {/* Resume Download Button */}
               <motion.a
                 initial={{ scale: 0 }}
@@ -75,7 +76,7 @@ function Home() {
                 whileTap={{ scale: 0.95 }}
                 href="/Divya Inapakurthi Resume.pdf"
                 download="DivyaInapakurthi.pdf"
-                className="text-white tracking-wider  md:mt-5 rounded px-3 md:px-8  md:py-0 font-semibold hover:cursor-pointer flex items-center gap-2 ml-4"
+                className="text-white tracking-wider z-40 md:mt-5 rounded px-3 md:px-8  md:py-0 font-semibold hover:cursor-pointer flex items-center gap-2 ml-4"
               >
                 Resume
                 <FaAngleRight fill="#fff" size={20} />
