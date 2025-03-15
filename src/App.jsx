@@ -6,10 +6,8 @@ import Projects from "./components/Projects"
 import Divider from "./components/Divider"
 import ContactForm from "./components/ContactForm"
 function App() {
-
   return (
-    <div className="bg-neutral-900">
-
+    <div className="bg-neutral-900 m-0">
       <div className="font-inter w-full h-screen bg-neutral-900 overflow-x-hidden">
         <Header />
         <Home />
@@ -21,7 +19,6 @@ function App() {
       <ContactForm />
       <Divider />
     </div>
-  )
+  );
 }
-
 export default App

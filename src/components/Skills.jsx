@@ -33,18 +33,18 @@ const tools = [
 const Skills = () => {
   return (
     <>
-      <div className="flex pt-10 justify-center w-full items-center">
+      <div className="flex pt-10 justify-center w-screen items-center">
         <motion.img
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           src={ani2}
           alt=""
-          className="w-100 md:w-130"
+          className="w-70 md:w-130"
         />
       </div>
 
-      <section id="skills" className="relative">
+      <section id="skills" className="relative w-screen ">
         <div className="pt-20 space-y-6 bg-neutral-900 text-center text-white">
           <motion.img
             initial={{ opacity: 0, x: -50 }}

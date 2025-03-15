@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ContactForm = () => {
   return (
-    <section id="contact" className="pt-20">
+    <section id="contact" className="pt-20 w-screen">
       <div className="text-white">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

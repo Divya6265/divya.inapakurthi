@@ -12,8 +12,8 @@ import { ReactIcon, NodeIcon, ExpressIcon, MongoIcon, ReduxIcon, TailwindcssIcon
 
 function Projects() {
   return (
-    <section id="projects" className="pt-20">
-      <div className="text-white text-center relative">
+    <section id="projects" className="pt-20 w-screen">
+      <div className="text-white text-center relative w-screen ">
         <motion.img
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -92,7 +92,7 @@ function Projects() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 w-110 text-center"
+              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 md:w-[440px] w-[80%] p-2 text-center"
             >
               A complete fashion e-commerce store with MERN stack from scratch. Includes user auth with JWT, shopping cart with backend inventory management.
             </motion.p>

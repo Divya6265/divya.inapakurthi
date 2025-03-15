@@ -6,15 +6,13 @@ import { BouncingSVG, Arrow, Line, Line1, Line2 } from './BouncingSVG';
 
 function Home() {
   return (
-    <section id="home">
+    <section id="home" className="w-screen">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="pt-[50px] w-full flex flex-col justify-center items-center absolute h-dvh top-0 left-0 right-0 overflow-x-hidden"
-      >
+        className="pt-[50px] w-screen flex flex-col justify-center items-center absolute h-dvh top-0 left-0 right-0 overflow-x-hidden">
         <div className="flex flex-col-reverse gap-x-30 relative m-auto md:flex-row justify-center items-center">
-          {/* Text Content */}
           <div className="text-white mt-10 md:w-500px flex flex-col justify-center max-w-[580px] m-auto p-4">
             <motion.h1
               initial={{ y: -50, opacity: 0 }}

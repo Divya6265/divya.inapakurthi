@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`bg-neutral-900/50 backdrop-blur-md z-50 fixed p-4 w-full ${
+      className={`bg-neutral-900/50 backdrop-blur-md z-50 fixed p-4 w-screen ${
         isOpen ? "h-full" : ""
       } md:h-fit m-auto`}
     >
@@ -144,7 +144,7 @@ const Header = () => {
             <a
               key={link}
               href={`#${link}`}
-              className={`text-[#9ca3af] hover:text-gray-400/50 p-4 relative ${
+              className={`text-[#9ca3af] hover:text-gray-400/50 p-6 text-xl relative ${
                 activeLink === link ? "active font-semibold text-white hover:text-white" : ""
               }`}
               onClick={() => {
