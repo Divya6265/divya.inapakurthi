@@ -111,7 +111,7 @@ function Projects() {
                 href="https://github.com/your-repo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden ml-20 p-2.5 bg-neutral-700/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
+                className="md:hidden p-2.5 bg-neutral-700/50 rounded-full hover:bg-neutral-700/70 transition-colors duration-300"
               >
                 <FaGithub size={24} />
               </a>
@@ -179,7 +179,7 @@ function Projects() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 w-110 text-center"
+              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 md:w-[440px] w-[80%] p-2 text-center"
             >
               Developed a dynamic leaderboard for a Game of Thrones-themed score tracker using Server-Sent Events (SSE) to enable real-time score updates.
             </motion.p>
@@ -258,7 +258,7 @@ function Projects() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 w-110 text-center"
+              className="text-[17px] text-gray-300 my-3 tracking-wider leading-8 md:w-[440px] w-[80%] p-2 text-center"
             >
               Built a real-time Tic Tac Toe game using WebSockets, React, and Tailwind CSS. It supports multiplayer gameplay, rematch options, and has a responsive design for a smooth user experience.
             </motion.p>
