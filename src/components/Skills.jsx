@@ -33,7 +33,7 @@ const tools = [
 const Skills = () => {
   return (
     <>
-      <div className="flex pt-10 justify-center w-screen items-center">
+      <div className="flex pt-10 justify-center w-full items-center">
         <motion.img
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Skills = () => {
         />
       </div>
 
-      <section id="skills" className="relative w-screen ">
+      <section id="skills" className="relative w-full px-2 md:px-0 ">
         <div className="pt-20 space-y-6 bg-neutral-900 text-center text-white">
           <motion.img
             initial={{ opacity: 0, x: -50 }}

@@ -7,7 +7,7 @@ import Divider from "./components/Divider"
 import ContactForm from "./components/ContactForm"
 function App() {
   return (
-    <div className="bg-neutral-900 m-0">
+    <div className="bg-neutral-900 w-full m-0  overflow-x-hidden">
       <div className="font-inter w-full h-screen bg-neutral-900 overflow-x-hidden">
         <Header />
         <Home />

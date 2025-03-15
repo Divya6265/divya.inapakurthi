@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`bg-neutral-900/50 backdrop-blur-md z-50 fixed p-4 w-screen ${
+      className={`bg-neutral-900/50 backdrop-blur-md z-50 fixed p-4 w-full ${
         isOpen ? "h-full" : ""
       } md:h-fit m-auto`}
     >

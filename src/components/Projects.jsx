@@ -12,8 +12,8 @@ import { ReactIcon, NodeIcon, ExpressIcon, MongoIcon, ReduxIcon, TailwindcssIcon
 
 function Projects() {
   return (
-    <section id="projects" className="pt-20 w-screen">
-      <div className="text-white text-center relative w-screen ">
+    <section id="projects" className="pt-20 w-full px-2 md:px-0">
+      <div className="text-white text-center relative w-full ">
         <motion.img
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -45,7 +45,7 @@ function Projects() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-wrap justify-center my-15 items-center group gap-x-30"
+          className="flex flex-wrap justify-center w-full my-15 items-center group gap-x-30"
         >
           <div className="relative w-140 h-fit overflow-hidden">
             <motion.img
@@ -78,7 +78,7 @@ function Projects() {
           <div className="flex flex-col items-center my-3 relative">
             <div className="flex items-center justify-center group w-fit">
               <motion.h1
-                whileHover={{ scale: 1.05 }}
+                // whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 className="flex items-center w-75 text-[#C778DD] hover:text-blue-500 font-bold text-2xl gap-2 transform transition duration-500 hover:cursor-pointer"
               >
