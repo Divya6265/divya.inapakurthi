@@ -18,7 +18,7 @@ const frontend = [
 ];
 
 const backend = [
-  { logo: "https://raw.githubusercontent.com/bestofjs/bestofjs/master/apps/bestofjs-nextjs/public/logos/nodejs.svg", alt: "Node JS logo", name: "Node JS" },
+  { logo: "https://brandeps.com/logo-download/N/Node-JS-logo-vector-02.svg", alt: "Node JS logo", name: "Node JS" },
   { logo: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg", alt: "Express JS logo", name: "Express JS" },
   { logo: "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/mysql-icon.svg", alt: "MySQL logo", name: "MySQL" },
   { logo: "https://raw.githubusercontent.com/NX211/homer-icons/master/svg/mongodb.svg", alt: "MongoDB logo", name: "MongoDB" },

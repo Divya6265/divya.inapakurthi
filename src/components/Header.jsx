@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "/name.png";
 import { FiGithub, FiLinkedin, FiInstagram, FiCodepen } from "react-icons/fi"; // Import icons
-
+import {Hash} from './BouncingSVG'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
@@ -20,7 +20,7 @@ const Header = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the section is visible
+      threshold: 0.5, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -49,12 +49,10 @@ const Header = () => {
       } md:h-fit m-auto`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
         <div className="text-white text-lg font-bold w-19">
           <img src={logo} alt="not found" />
         </div>
-
-        {/* Hamburger Menu (Mobile) */}
+ 
         <div className="md:hidden z-50">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             <div className="w-8 h-8 flex flex-col justify-around">
@@ -77,7 +75,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex md:items-center space-x-8">
           {["home", "skills", "projects", "contact"].map((link) => (
             <a
@@ -88,16 +85,17 @@ const Header = () => {
               }`}
               onClick={() => handleLinkClick(link)}
             >
-              {link.charAt(0).toUpperCase() + link.slice(1)}
-              {/* Small dot for active link */}
+                <span className="flex flex-row items-center justify-center gap-1 ">
+             <Hash/> <span className="">{link.charAt(0).toUpperCase() + link.slice(1) }</span>
+              </span>
+               {/* {link.charAt(0).toUpperCase() + link.slice(1)} */}
               {activeLink === link && (
-                <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-1.5 h-1.5 bg-white rounded-full"></span>
+                <span className="absolute left-4/7 transform -translate-x-1/2 bottom-0 w-1.5 h-1.5 bg-white rounded-full"></span>
               )}
             </a>
           ))}
         </div>
 
-        {/* Social Icons (Desktop) */}
         <div className="hidden md:flex space-x-7">
           <a
             href="https://github.com/Divya6265"
@@ -152,15 +150,15 @@ const Header = () => {
                 toggleMenu();
               }}
             >
-              {link.charAt(0).toUpperCase() + link.slice(1)}
-              {/* Small dot for active link */}
+              <span className="flex flex-row items-center justify-center gap-1 ">
+             <Hash/> <span className="">{link.charAt(0).toUpperCase() + link.slice(1) }</span>
+              </span>
               {activeLink === link && (
                 <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-1.5 h-1.5 bg-white rounded-full"></span>
               )}
             </a>
           ))}
 
-          {/* Social Icons (Mobile) */}
           <div className="flex justify-center space-x-6 mt-4">
             <a
               href="https://github.com/Divya6265"
