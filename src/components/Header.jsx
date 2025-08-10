@@ -114,7 +114,7 @@ const Header = () => {
             <FiLinkedin size={18} />
           </a>
           <a
-            href="https://instagram.com/divya.music_lvr"
+            href="https://instagram.com/divya.inapakurthi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#9ca3af]"
